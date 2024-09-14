@@ -8,7 +8,7 @@ This project consists of a multi-language website that provides information on h
 
 ## Available Pages
 
-- `index_de.html`: Main page in **German**, offering information on domestic violence assistance in Germany for Ukrainian women. It includes links to various chapters and external resources.
+- `index.html`: Main page in **German**, offering information on domestic violence assistance in Germany for Ukrainian women. It includes links to various chapters and external resources.
 - `index_ukr.html`: The **Ukrainian** version of the main page, providing similar content tailored for Ukrainian speakers.
 - `ukr_longread.html`: A long-read article in **Ukrainian** detailing the challenges and resources available to Ukrainian refugees who are victims of domestic violence.
 

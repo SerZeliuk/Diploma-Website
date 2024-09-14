@@ -1,0 +1,421 @@
+body {
+   
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+    background: #f4f4f4;
+    /* padding-right: 20px;
+    padding-bottom: 20px;
+    */
+    /* background-image: url("hamster.gif");  */
+
+    color: #333;
+    
+}
+.circle {
+    width: 20px;
+    height: 20px;
+    
+    background-color: #33333373;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.dot {
+    width: 4px;
+    height: 4px;
+    background-color: #f4f4f4;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.dot:nth-child(1) {
+    left: 23%;
+}
+
+.dot:nth-child(2) {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dot:nth-child(3) {
+    right: 23%;
+}
+
+#navToggle {
+    align-items:center;
+    width: 60px; /* Width of the button */
+    height: 40px; /* Height of the button */
+    position: fixed;
+    top: 30px; /* Distance from the top of the positioned-container */
+    left: 35px;
+    background-color: transparent; /* Ensure the button background is transparent */
+    border: none; /* Remove button border */
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; /* Evenly space the lines */
+    padding: 0; /* Remove button padding */
+}
+
+#navToggle::before,
+#navToggle::after,
+#navToggle span {
+    content: "";
+    width: 100%; /* Width of each line */
+    height: 4px; /* Height of each line */
+    background-color: rgba(255, 255, 255, 0.7); /* Black with slight transparency */
+    transition: all 0.3s ease; /* Smooth transition for any animation */
+}
+
+#navToggle span {
+    background-color: rgba(255, 255, 255, 0.7); /* Ensure middle line is styled correctly */
+    display: block; /* Necessary to apply dimensions */
+}
+
+#navToggle::before {
+    top: 0;
+}
+
+#navToggle::after {
+    bottom: 0;
+}
+.article_button{
+
+    /* margin-top: 20px;*/
+    margin-left: 5em;
+    
+    margin-left: 12vw;
+    margin-right: 1vw; 
+    width: 32vw;
+    height: 7vh;
+    
+    background-color: #00374d4d;
+    color: #fff;
+    font-size: large;
+    font-style: italic;
+    border-color: #f4f4f447;
+    box-shadow: #f4f4f4;
+    border-style:solid;
+}
+
+.article_button:hover{
+    
+    background-color: #224a5aad;
+    color: #ffffff92;
+
+}
+#art2{
+    margin-left: 10px;
+    }
+#lang_sw{
+    width: 4vw;
+  
+    margin-right: 2.3vw;
+    
+}
+
+#toggleContainer {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* width: 97.35%; */
+    background: url('Images/header_pic_1.png'); 
+    background-color: red;
+    background-size: cover;
+    
+    height: 12vh;
+    
+    left: 20px;
+ 
+    z-index: 1; 
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+/* Styling for the toggle button for better visibility */
+#navToggle {
+    cursor: pointer;
+    /*background-color: #333; /* Dark background for the button */
+    color: white; /* Light color for text or icon */
+    border: none; /* No border for a cleaner look */
+    /*padding: 10px 15px; /* Padding around the button for easier clicking */
+    font-size: 16px; /* Font size for any text inside the button */
+}
+
+#navToggle span {
+    display: block;
+    height: 4px; /* Height of each line in the hamburger icon */
+    background-color: #fff; /* Color of the hamburger icon lines */
+    margin: 5px 0; /* Space between lines */
+    transition: background-color 0.001s, transform 0.001s;
+}
+
+#navPanel {
+    display: none; /* Initially hidden */
+    position: fixed; /* Overlay the content */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 75%;
+    /*background-color: rgba(0, 0, 0, 0.5); /* Partly transparent */
+    z-index: 2; /* Ensure it's above other content */
+}
+
+.nav-panel .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 200px; 
+    height: 100%;
+    background-color: #fff; 
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#navigation:hover #navPanel {
+    display: block; }
+
+
+
+
+header {
+    background-color: #000;
+    background-image: url("Images/header_pic_1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    transition: height 0.3s;
+    /* position: fixed; */
+    color: #fff;
+    height: 350px;
+    display: flex;  
+    justify-content: center; /* Center horizontally */
+    padding-top: 110px;
+    /* z-index: 1000; */
+    max-width: 100%;
+    /*align-items: center; /* Center vertically */
+}
+
+
+#head_text_2{
+    /*max-width: 200px;*/
+    display: flex;  
+    justify-content: center; /* Center horizontally */
+    align-items: center;    
+}
+#sosiska_name{
+    padding-left: 50px;
+}
+#sosiska_name2{
+    /* padding-left: 50px;
+    padding-top: 100px; */
+    padding-left: 600px;
+}
+
+#sosiska{
+    text-align: left;
+    width: 500px;
+    padding-left: 20px;
+    border-style:solid;
+    border-width: 4px;
+    border-right: #f4f4f4;
+    border-top: #f4f4f4;
+    border-bottom: #f4f4f4;
+}
+#sosiska2{
+    text-align: left;
+    width: 600px;
+    padding-left: 20px;
+    border-style:solid;
+    border-width: 4px;
+    border-right: #f4f4f4;
+    border-top: #f4f4f4;
+    border-bottom: #f4f4f4;
+}
+#head_text {
+    width: 65%; /* Adjust width to control text wrapping */
+    text-align: left;
+    
+    margin: 0 auto; /* Ensures the text block itself is centered within the header */
+}
+
+.sidebar a.active {
+    background-color: #00374D; /* Change as needed */
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    overflow-y: auto; /* Enable scrolling if the page is long */
+}
+.sidebar a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.sidebar a:hover {
+    background-color: #ddd;
+}
+
+/* header {
+    background: #00374D;
+    color: #fff;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    text-align: center;
+} */
+
+
+
+section {
+    
+    justify-items: center;
+    margin: 20px 0;
+}
+section p{
+    padding-left: 70px;
+    max-width: 100%;
+    
+    padding-right: 20px;
+}
+@keyframes slideIn {
+    from {
+        transform: translateX(10%); 
+        
+        /* Start from the right */
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0); /* Slide in to original position */
+        opacity: 1;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateX(0); /* Start from the original position */
+        opacity: 1;
+    }
+    to {
+        transform: translateX(10%); /* Slide out to the right */
+        opacity: 0;
+    }
+}
+
+.citat {
+    opacity: 0; /* Initially hidden */
+    transform: translateX(100%); /* Start off to the right */
+    transition: transform 0.5s, opacity 0.5s;
+
+}
+.image_middle{
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+    width: 500px;
+    height: auto;
+    margin-left: 33%;
+    padding-top: 40px;
+    padding-bottom: 20px;    
+}
+.image_label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    font-weight: 100;
+}
+h2 {
+    background-color: #00374D;
+    color: #FFFFFF;
+    text-align: center;
+}
+p.citat{
+    opacity: 0; /* Initially hidden */
+    transform: translateX(100%); /* Start off to the right */
+    transition: transform 0.5s, opacity 0.5s;
+
+    width: 850px;
+    padding: 10px;
+    padding-left: 15px;
+    background-image: linear-gradient(to right, #f3bc56b3,#ffd078b3,#ffdfa3b3,#ffefd3b3, #f4f4f4,#f4f4f4);
+    
+    /*background-color: rgba(243, 188, 86, 0.7);*/
+    
+}
+p.citat_who{
+    font-style: italic;
+}
+.citat_img{
+    width: 120px;
+    height: auto;
+    margin-right: 30px;
+}
+#hilfetelefon{
+    width: 160px;
+    height: auto;
+    margin-right: 0px;
+}
+.citat1{
+    padding-left: 70px;
+    padding-right: 10px;
+    
+    display: flex; /* Enables Flexbox */
+    align-items: center;
+}
+#sosiska_sosisovna{
+    padding-left: 60px;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    background: #00374D;
+    color: #fff;
+}
+
+a{
+    font-size: 1.01em;
+    color: #00374D;
+    font-style: italic;
+}
+
+#title {
+    margin: 0;
+    padding: 0;
+    line-height: 1.3;
+    z-index: 4;
+}
+.gifka{
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    width: auto;
+    padding-top: 30px;
+    padding-bottom: 35px;
+}
+#vidos{
+    display: flex;
+    justify-content: center;
+}

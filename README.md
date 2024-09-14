@@ -5,6 +5,7 @@ This project consists of a multi-language website that provides information on h
 
 ![image](https://github.com/user-attachments/assets/ab3f6fdf-75f9-46b4-9910-f01eab407976)
 
+# You can view the live version [here](https://serzeliuk.github.io/Diploma-Website/).
 
 ## Available Pages
 
@@ -34,4 +35,3 @@ This project consists of a multi-language website that provides information on h
 3. Open `index_ukr.html` or `index.html` in a web browser to view the site in Ukrainian or German.
 
 
-# You can view the live version [here](https://serzeliuk.github.io/Diploma-Website/).
